@@ -1,0 +1,11 @@
+public with sharing class locationController {
+    @AuraEnabled
+    public static void saveLocation(String objectApiName,String recordId,Decimal latitude,Decimal longitude){  
+         sObject sObj = Schema.getGlobalDescribe().get(objectApiName).newSObject();
+         sObj.put('Id', recordId);
+         sObj.put('Current_Location__Longitude__s',longitude);
+         sObj.put('Current_Location__Latitude__s',latitude);
+         update sObj;
+        system.debug(sObj);
+    }
+}
