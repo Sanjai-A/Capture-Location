@@ -19,6 +19,7 @@ export default class navigateToRecordAction extends LightningElement {
                 variant: 'success',
               });
               this.dispatchEvent(evt);
+              eval("$A.get('e.force:refreshView').fire();");
             });
         });
           } else {
