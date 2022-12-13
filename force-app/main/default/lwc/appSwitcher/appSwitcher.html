@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Quick App Switcher">
+        <div class="slds-form-element__control">
+        <div class="slds-visual-picker slds-visual-picker_small">
+        <input type="checkbox" id="visual-picker-31" value="visual-picker-31" name="example-unique-name-1" onclick={sales} />
+        <label for="visual-picker-31">
+        <span class="slds-visual-picker__figure slds-visual-picker__icon slds-align_absolute-center">
+        <span class="slds-icon_container">
+          <img src={salesimg} />
+        </span>
+        </span>
+        <span class="slds-visual-picker__body">
+        <span class="slds-text-title">SALES</span>
+        </span>
+        </label>
+        </div>
+        <div class="slds-visual-picker slds-visual-picker_small">
+        <input type="checkbox" id="visual-picker-32" value="visual-picker-32" name="example-unique-name-2" onclick={services}  />
+        <label for="visual-picker-32">
+        <span class="slds-visual-picker__figure slds-visual-picker__icon slds-align_absolute-center">
+        <span class="slds-is-not-selected">
+        <span class="slds-icon_container">
+          <img src={serviceimg} />
+        </span>
+        </span>
+        </span>
+        <span class="slds-visual-picker__body">
+        <span class="slds-text-title">SERVICE</span>
+        </span>
+        </label>
+        </div>
+       
+        </div>
+    </lightning-card>
+  </template>
+  

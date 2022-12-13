@@ -1,0 +1,6 @@
+:host{
+    --slds-c-card-color-background : transparent;
+    --slds-c-card-color-border:none;
+    --sds-c-card-radius-border:none;
+    --sds-c-card-shadow:none;
+}
